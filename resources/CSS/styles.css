@@ -1,0 +1,59 @@
+/**fonts**/
+@font-face {
+    font-family: 'Rollandin Emilie';
+    src: url(../fonts/RollandinEmilie.ttf);
+}
+
+@font-face {
+    font-family: 'Rational integer';
+    src: url(../fonts/ratio___.ttf);
+}
+
+@font-face {
+    font-family: 'Blokletters Balpen';
+    src: url(../fonts/Blokletters-Balpen.ttf);
+}
+
+@font-face {
+    font-family: 'Blokletters Potlood';
+    src: url(../fonts/Blokletters-Potlood.ttf);
+}
+
+@font-face {
+    font-family: 'Blokletters Viltstift';
+    src: url(../fonts/Blokletters-Viltstift.ttf);
+}
+
+/**general Styles**/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Blokletters Balpen', Arial, Helvetica, sans-serif;
+    font-family: 16px;
+}
+
+h1 {
+    font-family: 'Rollandin Emilie', 'Arial Black', Helvetica, sans-serif;
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Blokletters Viltstift', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Blokletters Viltstift', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/**footer**/
+footer {
+    font-family: 'Blokletters Potlood', 'Arial Narrow', Helvetica, sans-serif;
+    font-size: 0.875rem;
+}
