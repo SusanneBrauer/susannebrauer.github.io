@@ -50,7 +50,7 @@ h1 {
 
 h2 {
     font-family: 'Blokletters Viltstift', Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     font-weight: normal;
 }
 
@@ -113,6 +113,7 @@ main {
 
 
 main #hello img {
+    width: 300px;
     border-radius: 40%;
     border: #b3b4b5 solid 4px;
     box-shadow: 0 0 20px 10px #e6dfd1;
@@ -120,9 +121,37 @@ main #hello img {
 /***about me section***/
 
 /***Skills Section****/
+#skills {
+    margin-right: 4px;
+    border-left: #b3b4b5 solid 1px;
+    border-bottom: #b3b4b5 solid 1px;
+    border-right: #b3b4b5 solid 1px;
+    border-radius: 15px;
+}
+
+.ui-accordion-header {
+    border-top: #b3b4b5 solid 1px;
+}
+
+.ui-accordion-header:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ui-accordion-content {
+    border-bottom: #b3b4b5 solid 1px;
+}
+
+.ui-accordion-content li {
+    display: inline-block;
+    border: #b3b4b5 solid 1px;
+    padding: 6px;
+    border-radius: 10px;
+}
 
 /***project section***/
 #projects {
+    margin-left: 4px;
     border-left: #b3b4b5 solid 1px;
     border-bottom: #b3b4b5 solid 1px;
     border-right: #b3b4b5 solid 1px;
@@ -143,6 +172,7 @@ main #hello img {
 
 .tab:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .ui-tabs-active {
