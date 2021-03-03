@@ -131,6 +131,7 @@ main #hello img {
 
 .ui-accordion-header {
     border-top: #b3b4b5 solid 1px;
+    padding-top: 3px;
 }
 
 .ui-accordion-header:hover {
@@ -186,6 +187,18 @@ main #hello img {
     padding: 0 5px;
 }
 
+.project-area ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-area li {
+    display: inline-block;
+    border: #b3b4b5 solid 1px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
 .project-thumb img {
     width: 100%;
 }
@@ -206,4 +219,18 @@ footer {
     font-family: 'Blokletters Potlood', 'Arial Narrow', Helvetica, sans-serif;
     font-size: 0.875rem;
     text-align: center;
+}
+
+#contact a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact li {
+    display: inline-block;
 }
