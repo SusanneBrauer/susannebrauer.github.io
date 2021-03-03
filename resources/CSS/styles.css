@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: 'Blokletters Balpen', Arial, Helvetica, sans-serif;
-    font-family: 16px;
+    font-size: 16px;
     color: #b3b4b5;
     width: 80%;
     margin: 0 auto;
@@ -84,9 +84,18 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 /***nav***/
+nav {
+    width: 50%;
+    font-family: "Rational Integer";
+    font-size: 2rem;
+}
+
 nav ul {
+    display: flex;
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -134,6 +143,17 @@ main #hello img {
     text-shadow: #125820 0px 0px 5px, #e6dfd1 0px 0px 10px, #FFF 0px 0px 15px, #63625f 0px 0px 20px, #63625f 0px 0px 30px, #63625f 0px 0px 40px, #63625f 0px 0px 50px, #63625f 0px 0px 75px;
 }
 /****project area****/
+
+/***contact section***/
+#contact {
+    /**width: 70%;
+    margin: auto;**/
+    line-height: 2.5rem;
+}
+
+#contact .row {
+    justify-content: space-around;
+}
 
 /**footer**/
 footer {
