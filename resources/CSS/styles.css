@@ -27,17 +27,24 @@
 /**general Styles**/
 html {
     box-sizing: border-box;
+    background-color: #002403;
+    background-image: radial-gradient(circle, #125820 0%, #002403 70%);
 }
 
 body {
     font-family: 'Blokletters Balpen', Arial, Helvetica, sans-serif;
     font-family: 16px;
+    color: #b3b4b5;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5rem;
 }
 
 h1 {
     font-family: 'Rollandin Emilie', 'Arial Black', Helvetica, sans-serif;
     font-size: 4.5rem;
     font-weight: normal;
+    text-shadow: #e6dfd1 0px 0px 5px, #e6dfd1 0px 0px 10px, #FFF 0px 0px 15px, #63625f 0px 0px 20px, #63625f 0px 0px 30px, #63625f 0px 0px 40px, #63625f 0px 0px 50px, #63625f 0px 0px 75px;
 }
 
 h2 {
@@ -50,10 +57,87 @@ h3 {
     font-family: 'Blokletters Viltstift', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: normal;
+    margin: 15px 0;
 }
+
+h4 {
+    margin: 10px 0;
+}
+
+a {
+    color: #b3b4b5;
+    text-decoration: none;
+}
+
+/***layout styles***/
+.row {
+    display: flex;
+    padding: 20px 0;
+}
+
+.half-row {
+    width: 50%;
+    padding: 15px;
+}
+
+/**header**/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+/***nav***/
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+/**main**/
+main {
+    text-align: center;
+}
+/***hello section***/
+
+
+main #hello img {
+    border-radius: 40%;
+    border: #b3b4b5 solid 4px;
+    box-shadow: 0 0 20px 10px #e6dfd1;
+}
+/***about me section***/
+
+/***Skills Section****/
+
+/***project section***/
+/****tabs****/
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tab {
+    display: inline-block;
+}
+
+.tab:hover {
+    text-decoration: underline;
+}
+
+.ui-tabs-active {
+    color: #b3b4b5;
+    text-decoration: underline;
+    text-shadow: #125820 0px 0px 5px, #e6dfd1 0px 0px 10px, #FFF 0px 0px 15px, #63625f 0px 0px 20px, #63625f 0px 0px 30px, #63625f 0px 0px 40px, #63625f 0px 0px 50px, #63625f 0px 0px 75px;
+}
+/****project area****/
 
 /**footer**/
 footer {
     font-family: 'Blokletters Potlood', 'Arial Narrow', Helvetica, sans-serif;
     font-size: 0.875rem;
+    text-align: center;
 }

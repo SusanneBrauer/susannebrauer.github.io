@@ -21,116 +21,148 @@
         <h1>Susanne Brauer</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact &amp; Scocials</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact &amp; Scocials</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hello">
-            <h2>Hello There!</h2>
-            <img src="resources/images/Susanne.png" alt="portrait Susanne Brauer" style="width: 300px;">
-        </section>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>My name is Susanne Brauer and I'm an aspiring Fullstack developer. As a former mechanical engineer from the automotive sector I have worked on aquiring coding skills for a while in order to be prepared to move in to the webdevlopment sector as I am excited for new opportunities in a new area.</p>
-            <p>In my previous career within product developmenet in the automotive secto I was able to develop strong problem solving skills as well a strutured way of working translating a variety of customer requriements into the supporting attribute characteristics. Additionally I got very familiar working in cross functional teams for the best possible results for the product and customers.</p>
-            <p>I'm looking forward to transfering the skills from my engineering experience and using my newly gained developer skills on new exciting opportunities.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div id="skills-folders">
-                <h3>Front End</h3>
-                <div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+        <div class="row">
+            <section id="hello" class="half-row">
+                <h2>Hello There!</h2>
+                <img src="resources/images/Susanne.png" alt="portrait Susanne Brauer" style="width: 300px;">
+            </section>
+            <section id="about-me" class="half-row">
+                <h2>About Me</h2>
+                <p>My name is <strong>Susanne Brauer</strong> and I'm an aspiring Fullstack developer. As a former mechanical engineer from the automotive sector I have worked on aquiring coding skills for a while in order to be prepared to move in to the webdevlopment sector as I am excited for new opportunities in a new area.</p>
+                <p>In my previous career within product developmenet in the automotive secto I was able to develop strong problem solving skills as well a strutured way of working translating a variety of customer requriements into the supporting attribute characteristics. Additionally I got very familiar working in cross functional teams for the best possible results for the product and customers.</p>
+                <p>I'm looking forward to transfering the skills from my engineering experience and using my newly gained developer skills on new exciting opportunities.</p>
+            </section>
+        </div>
+        <div class="row">
+            <section id="skills" class="half-row">
+                <h2>Skills</h2>
+                <div id="skills-folders">
+                    <h3>Front End</h3>
+                    <div>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>In a half guided and half learning-by-doing approach I have learned these skills in home studying. Making used of a number of little projects to try out what I have learned, which taught me that there is always something new to learn.</p>
+                    </div>
+                    <h3>Back End</h3>
+                    <div>
+                        <ul>
+                            <li>php</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <p>In a half guided and half learning-by-doing approach I have learned these skills in home studying. For these skills in particular I found working hobby projects and working out to achieve certain results the most effective way to get better at them.</p>
+                    </div>
+                    <h3>Problem Solving</h3>
+                    <div>
+                        <p>In my previous career in product engineering in the automotive industry I gathered a growing experience in problem solving.</p>
+                    </div>
+                    <h3>Team Work and Cooperation</h3>
+                    <div>
+                        <p>Through my work I am very used to work in large cross functional teams utilising the expertise of the whole team to achieve the best possible result. During this time I have also lead certain task with in these teams. This taught me to work ewith different kinds of characters and personalities and building the respective working relationships.</p>
+                    </div>
+                    <h3>Adaptability</h3>
+                    <div>
+                        <p>I can quickly adapt to new circumstances ,situations and challenges. This was clearest for me when I left Germany to work and live in the UK with only 2 weeks time to prepare, travel and get settled in a new live. A more professional example is that I picked up and helped develop a new role in my previous position which required asessing the required activities and process on the fly working with my manager and other stake holders.</p>
+                    </div>
+                    <h3>Readiness of Mind</h3>
+                    <div>
+                        <p>Picking up new things tends to be be easy for me. Learning new things is one of the most exciting things for me, which is that lead me down the path to become a developer in the first place.</p>
+                    </div>
+                </div>
+                <script>
+                    $("#skills-folders").accordion({
+                        collapsible: true
+                    });
+                </script>
+            </section>
+            <section id="projects" class="half-row">
+                <h2>Projects</h2>
+                <div id="project-tabs">
+                    <ul class="tab-container">
+                        <li class="tab"><a href="#project1"><h3>Project 1</h3></a></li>
+                        <li class="tab"><a href="#project2"><h3>Project 2</h3></a></li>
+                        <li class="tab"><a href="#project3"><h3>Project 3</h3></a></li>
+                        <li class="tab"><a href="#project4"><h3>Project 4</h3></a></li>
                     </ul>
-                    <p>In a half guided and half learning-by-doing approach I have learned these skills in home studying. Making used of a number of little projects to try out what I have learned, which taught me that there is always something new to learn.</p>
+                    <div id="project1" class="project-area row">
+                        <div class="project-details">
+                            <h4>Description:</h4>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 1</p>
+                            <h4>Created Using:</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="project-thumb">
+                            <h4>Thumbnail:</h4>
+                            <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 1" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div id="project2" class="project-area row">
+                        <div class="project-details">
+                            <h4>Description:</h4>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 2</p>
+                            <h4>Created Using:</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="project-thumb">
+                            <h4>Thumbnail:</h4>
+                            <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 2" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div id="project3" class="project-area row">
+                        <div class="project-details">
+                            <h4>Description:</h4>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 3</p>
+                            <h4>Created Using:</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="project-thumb">
+                            <h4>Thumbnail:</h4>
+                            <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 3" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div id="project4" class="project-area row">
+                        <div class="project-details">
+                            <h4>Description:</h4>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 4</p>
+                            <h4>Created Using:</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="project-thumb">
+                            <h4>Thumbnail:</h4>
+                            <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 4" style="width: 300px;">
+                        </div>
+                    </div>
                 </div>
-                <h3>Back End</h3>
-                <div>
-                    <ul>
-                        <li>php</li>
-                        <li>MySQL</li>
-                    </ul>
-                    <p>In a half guided and half learning-by-doing approach I have learned these skills in home studying. For these skills in particular I found working hobby projects and working out to achieve certain results the most effective way to get better at them.</p>
-                </div>
-                <h3>Problem Solving</h3>
-                <div>
-                    <p>In my previous career in product engineering in the automotive industry I gathered a growing experience in problem solving.</p>
-                </div>
-                <h3>Team Work and Cooperation</h3>
-                <div>
-                    <p>Through my work I am very used to work in large cross functional teams utilising the expertise of the whole team to achieve the best possible result. During this time I have also lead certain task with in these teams. This taught me to work ewith different kinds of characters and personalities and building the respective working relationships.</p>
-                </div>
-                <h3>Adaptability</h3>
-                <div>
-                    <p>I can quickly adapt to new circumstances ,situations and challenges. This was clearest for me when I left Germany to work and live in the UK with only 2 weeks time to prepare, travel and get settled in a new live. A more professional example is that I picked up and helped develop a new role in my previous position which required asessing the required activities and process on the fly working with my manager and other stake holders.</p>
-                </div>
-                <h3>Readiness of Mind</h3>
-                <div>
-                    <p>Picking up new things tends to be be easy for me. Learning new things is one of the most exciting things for me, which is that lead me down the path to become a developer in the first place.</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div id="project-tabs">
-                <ul>
-                    <li><a href="#project1"><h3>Project 1</h3></a></li>
-                    <li><a href="#project2"><h3>Project 2</h3></a></li>
-                    <li><a href="#project3"><h3>Project 3</h3></a></li>
-                    <li><a href="#project4"><h3>Project 4</h3></a></li>
-                </ul>
-                <div id="project1">
-                    <h4>Description:</h4>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 1</p>
-                    <h4>Created Using:</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h4>Thumbnail:</h4>
-                    <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 1" style="width: 300px;">
-                </div>
-                <div id="project2">
-                    <h4>Description:</h4>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 2</p>
-                    <h4>Created Using:</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h4>Thumbnail:</h4>
-                    <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 2" style="width: 300px;">
-                </div>
-                <div id="project3">
-                    <h4>Description:</h4>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 3</p>
-                    <h4>Created Using:</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h4>Thumbnail:</h4>
-                    <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 3" style="width: 300px;">
-                </div>
-                <div id="project4">
-                    <h4>Description:</h4>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis ac est ac commodo. Nulla id mauris lacinia, convallis nisl vitae, porta ligula. Quisque in felis sollicitudin, imperdiet augue id, ultricies nunc. Sed id porttitor risus. Proin egestas risus augue, maximus eleifend ante congue at. Phasellus vel fringilla nibh. 4</p>
-                    <h4>Created Using:</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h4>Thumbnail:</h4>
-                    <img src="resources/images/project-placeholder.jpg" alt="thumbnail project 4" style="width: 300px;">
-                </div>
-            </div>
-        </section>
+                <script>$("#project-tabs").tabs();</script>
+            </section>
+        </div>
         <section id="contact">
             <h2>Contact &amp; Socials</h2>
-            <p>If you would like to get in touch<br>
-                via email: susanne.brauer@me.com<br>
-                via phone: 07514986691<br>
-                or on my socials:</p>
-                <ul>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </ul>
+            <div class="row">
+                <div class="half-row">
+                    <p>If you would like to get in touch<br>
+                    via email: susanne.brauer@me.com<br>
+                    via phone: 07514986691</p>
+                </div>
+                <div class="half-row">
+                    <p>Or find my socials:</p>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
